@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
+
   const formulario = document.querySelector("#formulario");
   const quantidadeAdultos = document.querySelector("#adultos");
   const quantidadeAdultosquenaobebem = document.querySelector(
@@ -38,3 +39,4 @@ window.addEventListener("load", () => {
     duracaoChurrasco.value = "";
   });
 });
+

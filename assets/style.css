@@ -1,0 +1,8 @@
+:root{
+    --blue: rgba(19, 22, 226, 0.89);
+}
+
+.sectioncalculo{
+    background: var(--indigo);
+    background: linear-gradient(to bottom, var(--blue), rgb(51, 46, 126))
+}
