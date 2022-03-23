@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Churrascômetro</title>
+  </head>
+  <body>
+    <main>
+      <div class="container-fluid vw-100 overflow-auto">
+        <div class="row vh-100">
+          <section
+            class="col-sm-12 col-lg d-flex flex-column align-items-center"
+          >
+            <div class="row w-100">
+              <img
+                class="w-25 p-1 m-3"
+                src="./assets/images/banner-churrascometro.png"
+                alt="Banner da página com um desenho de uma calculadora e a palavra Churrascômetro"
+              />
+            </div>
+            <div
+              class="row h-100 justify-content-center align-items-center text-center"
+            >
+              <h1 class="fs-1 fw-bold mt-5 px-3 w-75">
+                Prepare seu churrasco e economize dinheiro!
+              </h1>
+              <figure class="figure">
+                <img
+                  class="figure-img img-fluid rounded w-75"
+                  src="./assets/images/churrascofamilia.webp"
+                  alt="Familia fazendo churrasco na area externa de casa"
+                />
+              </figure>
+            </div>
+          </section>
+          <section class="col-sm-12 col-lg-4 bg-primary bg-gradient">
+            <div class="row justify-content-center position-relative d-flex">
+              <img
+                class="w-50 m-3 p-1"
+                src="./assets/images/banner-churrascometro.png"
+                alt=""
+              />
+            </div>
+            <div class="row mt-5 p-5 h-auto d-flex w-100">
+              <div id="resultado" class="row w-25 result d-flex">
+                <h2 class="justify-content-start">Você vai precisar de:</h2>
+              </div>
+              <form
+                id="formulario"
+                class="justify-content-center d-flex flex-column"
+              >
+                <input
+                  id="adultos"
+                  class="form-control text-center p-2 mb-5 rounded-3"
+                  type="number"
+                  placeholder="Quantidade de adultos"
+                />
+                <input
+                  id="adultosquenaobebem"
+                  class="form-control text-center p-2 mb-5"
+                  type="number"
+                  placeholder="Quantidade de adultos que não bebem"
+                />
+                <input
+                  id="criancas"
+                  class="form-control text-center p-2 mb-5"
+                  type="number"
+                  placeholder="Quantidade de crianças"
+                />
+                <input
+                  id="duracao"
+                  class="form-control text-center p-2 mb-5"
+                  type="number"
+                  placeholder="Duração do churrasco em horas"
+                />
+                <p
+                  id="erroformulariovazio"
+                  class="alert alert-danger fw-bold text-center"
+                  role="alert"
+                  style="display: none"
+                >
+                  Insira as informações acima para fazer o cálculo.
+                </p>
+                <input
+                  id="buttoncalcular"
+                  class="btn btn-dark btn-lg mx-auto"
+                  type="submit"
+                  value="Calcular"
+                />
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script src="./js/churras.js"></script>
+  </body>
+</html>
