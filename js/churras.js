@@ -83,8 +83,15 @@ window.addEventListener("load", () => {
     );
 
     const botaoVoltar = document.createElement("div");
-    botaoVoltar.classList.add("btn", "btn-dark", "btn-lg", "mx-auto", "botaovoltar");
+    botaoVoltar.classList.add(
+      "btn",
+      "btn-primary",
+      "btn-lg",
+      "mx-auto",
+      "mt-3"
+    );
     botaoVoltar.setAttribute("type", "submit");
+    botaoVoltar.setAttribute("id", "botaovoltar");
     botaoVoltar.insertAdjacentHTML("beforeend", "Voltar");
 
     resultado.appendChild(totalCarne);
@@ -93,6 +100,12 @@ window.addEventListener("load", () => {
     resultado.appendChild(botaoVoltar);
 
     resultado.classList.add("active");
+
+    botaoVoltar.addEventListener("click", (e) => {
+      resultado.innerText = "";
+      resultado.classList.remove("active");
+      console.log("oi");
+    });
 
     quantidadeAdultos.value = "";
     quantidadeAdultosquenaobebem.value = "";
