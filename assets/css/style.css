@@ -8,7 +8,7 @@ body {
   height: 100vh;
   position: fixed;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 .sectioncalculo {
@@ -17,7 +17,7 @@ body {
 }
 
 .result {
-    font-size: 2rem;
+  font-size: 1rem;
   background-color: rgb(255, 255, 255);
   position: absolute;
   height: 70%;
@@ -38,7 +38,6 @@ body {
   justify-content: center !important;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: start;
   font-family: sans-serif;
   color: rgb(49, 45, 45);
   -webkit-box-shadow: 5px 5px 7px 0px #3d3d3d;
@@ -53,7 +52,7 @@ body {
 
 .carne {
   margin: 10px 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   position: relative;
 }
 
@@ -65,31 +64,82 @@ body {
 }
 
 .cerveja {
-    margin: 10px 0;
-    font-size: 2rem;
-    position: relative;
+  margin: 10px 0;
+  font-size: 1.8rem;
+  position: relative;
 }
 
 .cerveja::before {
+  content: url(../images/beer.png);
+  text-align: center;
+  position: absolute;
+  left: -15%;
+}
+
+.refriagua {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.refriagua::before {
+  content: url(../images/coke.png);
+  text-align: center;
+  position: absolute;
+  left: -10%;
+}
+
+.botaovoltar {
+}
+
+@media screen and (max-width: 1378px){
+  input{
+    font-size: 0.8rem !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #primeirasecao {
+    height: 100vh;
+  }
+
+  #segundasecao {
+    height: 100vh;
+  }
+
+  .botaoacesso {
+    display: flex !important;
+  }
+
+  .botaoacesso:target {
+    scroll-margin-top: 0.8rem !important;
+  }
+  .carne,
+  .cerveja,
+  .refriagua {
+    position: relative;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .carne::before {
+    content: url(../images/meat.png);
+    text-align: center;
+    position: absolute;
+    left: -25%;
+  }
+
+  .cerveja::before {
     content: url(../images/beer.png);
     text-align: center;
     position: absolute;
-    left: -15%;
-  }
-  
-  .refriagua{
-    margin: 10px 0;
-    font-size: 2rem;
-    position: relative;
+    left: -20%;
   }
 
-  .refriagua::before{
+  .refriagua::before {
     content: url(../images/coke.png);
     text-align: center;
     position: absolute;
-    left: -10%;
+    left: -12%;
   }
-
-  .botaovoltar{
-      
-  }
+}
