@@ -44,8 +44,8 @@
               </figure>
             </div>
           </section>
-          <section class="col-sm-12 col-lg-4 bg-primary bg-gradient">
-            <div class="row justify-content-center position-relative d-flex">
+          <section class="col-sm-12 col-lg-4 bg-primary bg-gradient position-relative">
+            <div class="row justify-content-center d-flex">
               <img
                 class="w-50 m-3 p-1"
                 src="./assets/images/banner-churrascometro.png"
@@ -53,8 +53,8 @@
               />
             </div>
             <div class="row mt-5 p-5 h-auto d-flex w-100">
-              <div id="resultado" class="row w-25 result d-flex">
-                <h2 class="justify-content-start">Você vai precisar de:</h2>
+              <div id="resultado" class="result d-flex align-items-center justify-content-start pt-3">
+                <h2 class="d-flex">Você vai precisar de:</h2>
               </div>
               <form
                 id="formulario"
@@ -62,24 +62,28 @@
               >
                 <input
                   id="adultos"
+                  name="adultos"
                   class="form-control text-center p-2 mb-5 rounded-3"
                   type="number"
                   placeholder="Quantidade de adultos"
                 />
                 <input
                   id="adultosquenaobebem"
+                  name="adultosquenaobebem"
                   class="form-control text-center p-2 mb-5"
                   type="number"
                   placeholder="Quantidade de adultos que não bebem"
                 />
                 <input
                   id="criancas"
+                  name="criancas"
                   class="form-control text-center p-2 mb-5"
                   type="number"
                   placeholder="Quantidade de crianças"
                 />
                 <input
                   id="duracao"
+                  name="duracao"
                   class="form-control text-center p-2 mb-5"
                   type="number"
                   placeholder="Duração do churrasco em horas"
@@ -94,6 +98,7 @@
                 </p>
                 <input
                   id="buttoncalcular"
+                  name="buttoncalcular"
                   class="btn btn-dark btn-lg mx-auto"
                   type="submit"
                   value="Calcular"
