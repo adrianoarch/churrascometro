@@ -49,12 +49,14 @@ window.addEventListener("load", () => {
 
     const quantidadeTotalCarne =
       carnePorPessoa(duracao) * adultos +
+      carnePorPessoa(duracao) * adultossemalcool +
       (carnePorPessoa(duracao) / 2) * criancas;
 
     const quantidadeTotalCerveja = cervejaPorPessoa(duracao) * adultos;
 
     const quantidadeTotalBebida =
       bebidaPorPessoa(duracao) * adultos +
+      bebidaPorPessoa(duracao) * adultossemalcool +
       (bebidaPorPessoa(duracao) / 2) * criancas;
 
     console.log(quantidadeTotalCarne);
@@ -65,7 +67,7 @@ window.addEventListener("load", () => {
     totalCarne.classList.add("carne");
     totalCarne.insertAdjacentHTML(
       "beforeend",
-      `${quantidadeTotalCarne / 1000} Kg de carne`
+      `${Math.ceil(quantidadeTotalCarne / 1000)} Kg de carne`
     );
 
     const totalCerveja = document.createElement("div");
