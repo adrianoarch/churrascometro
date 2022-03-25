@@ -15,3 +15,5 @@ a manipulação do DOM para inserir na página q quantidade de carne e de bebida
 <h3>Responsividade para diversas telas</h3>
 
 Consegui adquirir diversos aprendizados neste projeto, reforçando conhecimentos de HTML, CSS e JavaScript.
+
+<a href="https://adrianoarch.github.io/churrascometro/">Link para o Projeto</a>
